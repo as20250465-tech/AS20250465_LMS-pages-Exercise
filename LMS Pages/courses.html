@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LMS - Courses</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">LMS</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+
+    <main class="courses-container">
+
+        <h1>Our Courses</h1>
+
+        <div class="course-grid">
+
+            <!-- Course 1 -->
+
+            <div class="course-card">
+
+                <div class="course-image programming">
+                    Programming
+                </div>
+
+                <div class="course-info">
+
+                    <h3>Programming Basics</h3>
+
+                    <button class="btn"
+                        onclick="showDetails('Programming Basics',
+                        'Learn Python programming from scratch.')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="course-card">
+
+                <div class="course-image ai">
+                    AI Fundamentals
+                </div>
+
+                <div class="course-info">
+
+                    <h3>AI Fundamentals</h3>
+
+                    <button class="btn"
+                        onclick="showDetails('AI Fundamentals',
+                        'Discover artificial intelligence and its applications.')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="course-card">
+
+                <div class="course-image design">
+                    UI Design
+                </div>
+
+                <div class="course-info">
+
+                    <h3>UI Design</h3>
+
+                    <button class="btn"
+                        onclick="showDetails('UI Design',
+                        'Learn the fundamentals of user interface design.')">
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <div id="detailsModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-x" onclick="closeDetails()"
+                aria-label="Close">&times;</button>
+
+            <h2 id="modalTitle">Course Title</h2>
+
+            <p id="modalDescription">Course description</p>
+
+            <button class="close-btn" onclick="closeDetails()">
+                Close
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <p>© 2024 LMS Platform. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
+

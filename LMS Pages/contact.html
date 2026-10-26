@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LMS - Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="brand">LMS</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+
+    </nav>
+
+
+
+    <main class="contact-container">
+
+        <h1>Contact Us</h1>
+
+        <form id="contactForm">
+
+            <label for="name">Name</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
+
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+
+        <p id="formMessage" role="status"></p>
+
+    </main>
+
+
+
+    <footer>
+        <p>© 2024 LMS Platform. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            document.getElementById("formMessage").textContent =
+                "Thank you! Your message has been submitted.";
+
+            this.reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
